@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="./style.css" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<div class="wrap">
+			<div class="header__holder">
+				<div class="header__logo">
+					<img src="assets/images/logo.png" alt="site logo">
+				</div>
+				<nav class="header__nav">
+					<ul class="header__list">
+						<li class="header__item"><a href="javascript:;" class="header__link">Home</a></li>
+						<li class="header__item"><a href="javascript:;" class="header__link">Books of the month</a></li>
+						<li class="header__item"><a href="javascript:;" class="header__link">About Us</a></li>
+						<li class="header__item"><a href="javascript:;" class="header__link">Contact Us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="wrap">
+			<div class="banner">
+				<div class="banner__cards">
+					<div class="banner__card">
+						<div class="banner__label">Book title</div>
+						<div class="banner__label">Author name</div>
+						<div class="banner__label">Number of pages</div>
+						<div class="banner__label">Is the book read?</div>
+					</div>
+				</div>
+				<button class="banner__add-card btn" type="button">Add a new card</button>
+				<div class="banner__popup">
+					<form class="banner__popup-holder" action="">
+						<div>
+							<label class="banner__label">Title :</label>
+							<input class="js-title" type="text">
+						</div>
+						<div>
+							<label class="banner__label">Author :</label>
+							<input class="js-author" type="text">
+						</div>
+						<div>
+							<label class="banner__label">Pages :</label>
+							<input class="js-pages" type="number">
+						</div>
+						<div>
+							<label class="banner__label">Is the book read?</label>
+							<input class="js-read" type="checkbox">
+						</div>
+						<button class="banner__popup-btn btn" type="button">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="wrap">
+			<div class="footer__left">
+				<a href="javascript:;" class="footer__link">Facebook</a>
+				<a href="javascript:;" class="footer__link">Instagram</a>
+				<a href="javascript:;" class="footer__link">Twitter</a>
+				<a href="javascript:;" class="footer__link">RSSfeed</a>
+			</div>
+			<div class="footer__right">Copyright Stefan Beljin
+			</div>
+		</div>
+	</footer>
+	<script src="./script.js"></script>
+</body>
+</html>
