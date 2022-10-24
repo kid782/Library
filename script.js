@@ -10,11 +10,13 @@ const bookRead = document.querySelector('.js-read');
 let myLibrary = [
 ];
 
-function Book(title, author, pages, read) {
-	this.title = title;
-	this.author = author;
-	this.pages = pages;
-	this.read = read;
+class myBook {
+	constructor(title, author, pages, read) {
+		this.title = title;
+		this.author = author;
+		this.pages = pages;
+		this.read = read;
+	}
 }
 
 function addBookToLibrary() {
@@ -22,7 +24,7 @@ function addBookToLibrary() {
 	let author = bookAuthor.value;
 	let pages = bookPages.value;
 	let read = (bookRead.checked) ? "Read":"Not read";
-	let newBook = new Book(title, author, pages, read);
+	let newBook = new myBook(title, author, pages, read);
 	myLibrary.push(newBook);
 	addNewCard();
 	newCardPopUp.style = 'display: none';
